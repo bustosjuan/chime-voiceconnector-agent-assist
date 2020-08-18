@@ -141,16 +141,57 @@ div.modal div.content span.opt {
 
 div.modal div.content span.opt:hover { cursor: pointer; }
 
-a.action {
+a.action1 {
     padding: 3px;
     text-decoration: none;
     color: var(--button-color);
-    background-color: var(--button-background-color);
+    background-color:#e88b01;
     border-radius: 3px;
 }
 
-a.action:hover {
+a.action1:hover {
     padding: 3px;
-    background-color: var(--button-click);
+    background-color: #f90;
+    border-radius: 3px;
+}
+
+a.action2 {
+    padding: 3px;
+    text-decoration: none;
+    color: var(--button-color);
+    background-color: #152939;
+    border-radius: 3px;
+}
+
+a.action2:hover {
+    padding: 3px;
+    background-color: #31465f;
+    border-radius: 3px;
+}
+
+a.action3 {
+    padding: 3px;
+    text-decoration: none;
+    color: var(--button-color);
+    background-color: #828282;
+    border-radius: 3px;
+}
+
+a.action3:hover {
+    padding: 3px;
+    background-color: #c4c4c4;
+    border-radius: 3px;
+}
+a.action4 {
+    padding: 3px;
+    text-decoration: none;
+    color: var(--button-color);
+    background-color: #d43939;
+    border-radius: 3px;
+}
+
+a.action4:hover {
+    padding: 3px;
+    background-color: #ff2424;
     border-radius: 3px;
 }
