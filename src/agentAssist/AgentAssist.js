@@ -123,8 +123,29 @@ class AgentAssist extends React.Component {
           </td>
           <td>
             {item.Action && item.Action === 'ClientSnapshot' ? (
-              <a href="#modal2" className="action">
+              <a href="#modal2" className="action1">
                 Client Snapshot
+              </a>
+            ) : (
+              ''
+            )}
+             {item.Action && item.Action === 'ConnectionDoctor' ? (
+              <a href="#modal1" className="action2">
+                Connection Doctor
+              </a>
+            ) : (
+              ''
+            )}
+             {item.Action && item.Action === 'Search' ? (
+              <a href="#modal3" className="action3">
+                Search
+              </a>
+            ) : (
+              ''
+            )}
+            {item.Action && item.Action === 'LoyaltyPlatform' ? (
+              <a href="#modal4" className="action4">
+                LoyaltyPlatform
               </a>
             ) : (
               ''
@@ -248,9 +269,91 @@ class AgentAssist extends React.Component {
             </div>
           </div>
         </div>
+        
+        <div id="modal3" className="overlay">
+          <a className="cancel" href="#a" title="Close modal">
+            {' '}
+          </a>
+          <div className="modal">
+            <h1>How to change current plan</h1>
+            <div className="content">
+              <table>
+                <tbody>
+                  <tr>
+                    <td>Document Title: </td>
+                    <td>How to change plan</td>
+                  </tr>
+                  <tr>
+                    <td>Source: </td>
+                    <td>https://www.att.com/support/article/wireless/KM1010787/</td>
+                  </tr>
+                  <tr>
+                    <td>Content: </td>
+                    <td>Go to Change my plan to see your current plan and our other plans.<br/>
+                    Scroll through our other plans. Select Compare to my plan to get a side-by-side view.<br/>
+                    Compare plans and decide which one you want.<br/>
+                    Choose Select & review and follow the prompts to switch plans.</td>
+
+                  </tr>
+                  <tr>
+                    <td>Actions</td>
+                    <td>
+                      <span className="opt" onClick={() => console.log('AdditionalSearch')}>
+                        Additional Search
+                      </span>
+                      <span className="opt" onClick={() => console.log('Relevant')}>
+                        Relevant
+                      </span>
+                      <span className="opt" onClick={() => console.log('NotRelevant')}>
+                        Not Relevant
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div id="modal4" className="overlay">
+          <a className="cancel" href="#a" title="Close modal">
+            {' '}
+          </a>
+          <div className="modal">
+            <h1>Loyalty Platform</h1>
+            <div className="content">
+              <table>
+                <tbody>
+                  <tr>
+                    <td>Account Age: </td>
+                    <td>12 months</td>
+                  </tr>
+                  <tr>
+                    <td>Plan: </td>
+                    <td>Standard 2 </td>
+                  </tr>
+                  <tr>
+                    <td>Active Offers: </td>
+                    <td>Not available</td>
+                  </tr>
+                  <tr>
+                    <td>Remediation</td>
+                    <td>
+                      <span className="opt" onClick={() => console.log('Transfer')}>
+                        Transfer to Loyalty Team
+                      </span>
+                      <span className="opt" onClick={() => console.log('Manager')}>
+                        Mgr. Escalation
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
 }
-
 export default withAuthenticator(AgentAssist, false);
