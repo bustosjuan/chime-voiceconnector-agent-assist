@@ -16,7 +16,8 @@ We are going to deploy an EC2 instance with a Centos 7 AMI.
 
 Click on “Launch Instance”:
 ![](images/daa_image_1.png)
-Search for the Official Centos 7 AMI on the AWS Marketplace, which is [_Free Tier_](https://aws.amazon.com/free/) Eligible:
+Search for the Official Centos 7 AMI on the AWS Marketplace, which is [_Free Tier_](https://aws.amazon.com/free/) 
+Eligible:
 ![](images/daa_image_2.png)
 In my case I will run a t2.micro instance, which for testing on 2 SIP channels (the incoming call and a SIP extension that will simulate the agent) should be enough.
 ![](images/daa_image_3.png)
