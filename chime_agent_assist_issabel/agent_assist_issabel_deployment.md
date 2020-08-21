@@ -15,6 +15,7 @@ For this portion of the process we are going to deploy an EC2 instance with a Ce
 We are going to deploy an EC2 instance with a Centos 7 AMI.
 
 Click on “Launch Instance”:
+
 ![](images/daa_image_1.png)
 Search for the Official Centos 7 AMI on the AWS Marketplace, which is [_Free Tier_](https://aws.amazon.com/free/) 
 Eligible:
